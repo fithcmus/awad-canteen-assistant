@@ -2,7 +2,6 @@
 // (Claude Haiku by default); the CLI runs the model's turns, our MCP server runs the tools.
 // The limits are ours, in this file and in mcp-server.mjs: 12 tool calls, 90 seconds, 2 repair rounds.
 // After the model, the backend parses and validates — the model's own "valid" never counts.
-import { spawn } from 'node:child_process';
 import { mkdirSync, writeFileSync, readFileSync, existsSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
 import path from 'node:path';
@@ -10,6 +9,7 @@ import { parseOrder, ORDER_SCHEMA } from './schema.mjs';
 import { validateOrder } from './validate.mjs';
 import { TOOLS } from './tools.mjs';
 import { redact } from './redact.mjs';
+import { spawnCli } from './model.mjs';
 
 const HERE = path.dirname(fileURLToPath(import.meta.url));
 export const LIMITS = { maxCalls: 12, deadlineMs: 90_000, maxRepairs: 2 };
@@ -28,7 +28,7 @@ function runModel({ cmd, model, system, message, mcpConfig, deadline, onEvent, s
       '--allowedTools', offered().map((t) => `mcp__canteen__${t.name}`).join(','), '--setting-sources', '',
       '--no-session-persistence', ...(process.env.CANTEEN_EFFORT ? ['--effort', process.env.CANTEEN_EFFORT] : []),
       ...(structured ? ['--json-schema', JSON.stringify(ORDER_SCHEMA)] : []), '--system-prompt', system, '--output-format', 'stream-json', '--verbose', message];
-    const child = spawn(cmd, args, { stdio: ['ignore', 'pipe', 'pipe'], env: { ...process.env } });
+    const child = spawnCli(cmd, args, { stdio: ['ignore', 'pipe', 'pipe'], env: { ...process.env } });
     const out = { text: '', toolUses: 0, costUsd: 0, tokensIn: 0, tokensOut: 0, timedOut: false, modelName: model };
     let buf = '';
     const timer = setTimeout(() => { out.timedOut = true; child.kill('SIGKILL'); }, Math.max(0, deadline - Date.now()));

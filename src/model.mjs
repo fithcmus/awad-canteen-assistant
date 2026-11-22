@@ -13,6 +13,12 @@
 // Put these in a file .env at the root (never committed); the npm scripts read it.
 import { spawn } from 'node:child_process';
 
+/** Starts the CLI, or a fake written in JavaScript (test/fake-*.mjs) with this same Node: a .mjs file needs no
+ *  execute permission that way, which a zip download and Windows do not keep. */
+export function spawnCli(cmd, args, opts) {
+  return /\.m?js$/.test(cmd) ? spawn(process.execPath, [cmd, ...args], opts) : spawn(cmd, args, opts);
+}
+
 export const provider = () => process.env.CANTEEN_PROVIDER || 'claude';
 export const modelName = () => process.env.CANTEEN_MODEL || (provider() === 'claude' ? 'haiku' : '');
 
@@ -29,7 +35,7 @@ function callClaude({ system = 'You are a helpful assistant.', prompt, model = m
   const t0 = Date.now();
   const out = { text: '', structured: null, costUsd: 0, tokensIn: 0, tokensOut: 0, ttftMs: null, ms: 0, deltas: 0, model, error: null };
   let child;
-  try { child = spawn(cmd, args, { stdio: ['ignore', 'pipe', 'pipe'] }); } catch (e) {
+  try { child = spawnCli(cmd, args, { stdio: ['ignore', 'pipe', 'pipe'] }); } catch (e) {
     out.error = `cannot start ${cmd}: ${e.message}`; return { child: { kill() {} }, done: Promise.resolve(out) };
   }
   let buf = ''; let err = '';
