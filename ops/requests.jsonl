@@ -1,0 +1,4 @@
+{"id": "q", "date": "2026-12-18", "pickup": "11:30", "members": [{"id": "m1", "cap": 50000}, {"id": "m2", "cap": 40000, "vegetarian": true}, {"id": "m3", "cap": 50000, "allergies": ["peanut"]}], "total": 130000}
+{"id": "q", "date": "2026-12-18", "pickup": "12:00", "members": [{"id": "m1", "cap": 45000}, {"id": "m2", "cap": 45000}], "total": 90000}
+{"id": "q", "date": "2026-12-18", "pickup": "11:00", "members": [{"id": "m1", "cap": 40000, "allergies": ["shellfish"]}, {"id": "m2", "cap": 40000}, {"id": "m3", "cap": 40000, "vegetarian": true}, {"id": "m4", "cap": 40000}], "total": 160000}
+{"id": "q", "date": "2026-12-18", "pickup": "12:30", "members": [{"id": "m1", "cap": 60000, "vegetarian": true}], "total": 60000}

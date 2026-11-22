@@ -1,0 +1,2 @@
+{"id": "d01", "date": "2026-12-04", "pickup": "11:30", "members": [{"id": "u1", "cap": 50000}, {"id": "u2", "cap": 40000, "vegetarian": true}, {"id": "u3", "cap": 50000, "allergies": ["peanut"]}], "total": 130000, "note": "one main dish each and a drink if it fits"}
+{"id": "d02", "date": "2026-12-04", "pickup": "12:00", "members": [{"id": "u1", "cap": 30000}, {"id": "u2", "cap": 30000}], "total": 60000, "note": "cheap lunch for two"}

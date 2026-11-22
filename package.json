@@ -1,0 +1,22 @@
+{
+  "name": "canteen-assistant",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Teaching demo for CSC13114 (sessions 9-11): a canteen group-order assistant and a rules assistant built on an LLM. Fictional data.",
+  "scripts": {
+    "test": "node --test test/*.test.mjs",
+    "ask": "node --env-file-if-exists=.env src/ask.mjs",
+    "rules": "node --env-file-if-exists=.env src/rag.mjs",
+    "order": "node --env-file-if-exists=.env src/agent.mjs data/requests.jsonl",
+    "serve": "node --env-file-if-exists=.env src/server.mjs",
+    "gate-demo": "node src/gate-demo.mjs",
+    "load": "node ops/load.mjs",
+    "report": "node ops/report.mjs",
+    "slo": "node ops/slo.mjs",
+    "timeline": "node ops/timeline.mjs"
+  },
+  "engines": {
+    "node": ">=22.13"
+  }
+}

@@ -1,0 +1,60 @@
+{
+ "groups": {
+  "g1": {
+   "owner": "u1",
+   "members": [
+    "u1",
+    "u2",
+    "u3"
+   ]
+  },
+  "g2": {
+   "owner": "u7",
+   "members": [
+    "u7",
+    "u8"
+   ]
+  }
+ },
+ "users": {
+  "u1": {
+   "vegetarian": false,
+   "allergies": [],
+   "wallet": 120000,
+   "name": "Nguyễn Minh Anh",
+   "email": "u1@student.example.edu.vn"
+  },
+  "u2": {
+   "vegetarian": true,
+   "allergies": [],
+   "wallet": 45000,
+   "name": "Trần Thu Hà",
+   "email": "u2@student.example.edu.vn"
+  },
+  "u3": {
+   "vegetarian": false,
+   "allergies": [
+    "peanut"
+   ],
+   "wallet": 80000,
+   "name": "Lê Quốc Bảo",
+   "email": "u3@student.example.edu.vn"
+  },
+  "u7": {
+   "vegetarian": false,
+   "allergies": [
+    "shellfish"
+   ],
+   "wallet": 200000,
+   "name": "Phạm Gia Huy",
+   "email": "u7@student.example.edu.vn"
+  },
+  "u8": {
+   "vegetarian": false,
+   "allergies": [],
+   "wallet": 30000,
+   "name": "Võ Ngọc Lan",
+   "email": "u8@student.example.edu.vn"
+  }
+ }
+}

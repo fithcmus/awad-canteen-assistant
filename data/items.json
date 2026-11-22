@@ -1,0 +1,23 @@
+[
+ {"id": "s1-1", "stall": "s1", "name": "Broken rice with grilled pork", "price": 35000, "vegetarian": false, "allergens": []},
+ {"id": "s1-2", "stall": "s1", "name": "Broken rice with pork, egg and pork skin", "price": 45000, "vegetarian": false, "allergens": ["egg"]},
+ {"id": "s1-3", "stall": "s1", "name": "Broken rice with fried egg (rice cooked in pork fat)", "price": 25000, "vegetarian": false, "allergens": ["egg"]},
+ {"id": "s1-4", "stall": "s1", "name": "Extra grilled pork", "price": 15000, "vegetarian": false, "allergens": []},
+ {"id": "s2-1", "stall": "s2", "name": "Beef noodle soup", "price": 40000, "vegetarian": false, "allergens": []},
+ {"id": "s2-2", "stall": "s2", "name": "Chicken noodle soup", "price": 35000, "vegetarian": false, "allergens": []},
+ {"id": "s2-3", "stall": "s2", "name": "Dry noodles with shrimp", "price": 38000, "vegetarian": false, "allergens": ["shellfish"]},
+ {"id": "s2-4", "stall": "s2", "name": "Noodle soup with vegetables, fish sauce broth", "price": 30000, "vegetarian": false, "allergens": []},
+ {"id": "s3-1", "stall": "s3", "name": "Tofu and mushroom rice bowl", "price": 32000, "vegetarian": true, "allergens": ["soy"]},
+ {"id": "s3-2", "stall": "s3", "name": "Vegetable fried rice", "price": 28000, "vegetarian": true, "allergens": ["egg"]},
+ {"id": "s3-3", "stall": "s3", "name": "Vegetarian spring rolls (4)", "price": 20000, "vegetarian": true, "allergens": ["gluten", "peanut"]},
+ {"id": "s3-4", "stall": "s3", "name": "Green Bowl lunch set: rice, tofu, soup, fruit", "price": 55000, "vegetarian": true, "allergens": ["soy"]},
+ {"id": "s4-1", "stall": "s4", "name": "Banh mi with pork", "price": 20000, "vegetarian": false, "allergens": ["gluten"]},
+ {"id": "s4-2", "stall": "s4", "name": "Banh mi with egg", "price": 15000, "vegetarian": true, "allergens": ["gluten", "egg"]},
+ {"id": "s5-1", "stall": "s5", "name": "Iced tea", "price": 5000, "vegetarian": true, "allergens": []},
+ {"id": "s5-2", "stall": "s5", "name": "Orange juice", "price": 20000, "vegetarian": true, "allergens": []},
+ {"id": "s5-3", "stall": "s5", "name": "Soy milk", "price": 10000, "vegetarian": true, "allergens": ["soy"]},
+ {"id": "s5-4", "stall": "s5", "name": "Yogurt", "price": 12000, "vegetarian": true, "allergens": ["milk"]},
+ {"id": "s6-1", "stall": "s6", "name": "Chicken curry with bread", "price": 42000, "vegetarian": false, "allergens": ["gluten"]},
+ {"id": "s6-2", "stall": "s6", "name": "Vegetable curry with rice", "price": 36000, "vegetarian": true, "allergens": ["peanut"]},
+ {"id": "s6-3", "stall": "s6", "name": "Curry house special: chicken curry, rice, bread, drink", "price": 60000, "vegetarian": false, "allergens": ["gluten", "peanut"]}
+]

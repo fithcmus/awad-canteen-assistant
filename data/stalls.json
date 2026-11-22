@@ -1,0 +1,20 @@
+[
+ {"id": "s1", "name": "Broken Rice Corner", "setting": "indoor",
+  "hours": {"mon": [["06:30", "14:00"]], "tue": [["06:30", "14:00"]], "wed": [["06:30", "14:00"]], "thu": [["06:30", "14:00"]], "fri": [["06:30", "14:00"]], "sat": [["06:30", "11:00"]], "sun": []},
+  "description": "Broken rice (com tam) with grilled pork, egg and pickles. Busy from 11:30."},
+ {"id": "s2", "name": "Noodle Bar", "setting": "indoor",
+  "hours": {"mon": [["07:00", "13:30"]], "tue": [["07:00", "13:30"]], "wed": [["07:00", "13:30"]], "thu": [["07:00", "13:30"]], "fri": [["07:00", "13:30"]], "sat": [], "sun": []},
+  "description": "Beef and chicken noodle soup, dry noodles with shrimp."},
+ {"id": "s3", "name": "Green Bowl", "setting": "indoor",
+  "hours": {"mon": [["10:00", "14:00"]], "tue": [["10:00", "14:00"]], "wed": [["10:00", "14:00"]], "thu": [["10:00", "14:00"]], "fri": [["10:00", "14:00"]], "sat": [], "sun": []},
+  "description": "Vegetarian rice bowls and tofu dishes. Every dish here is vegetarian."},
+ {"id": "s4", "name": "Banh Mi Stand", "setting": "outdoor",
+  "hours": {"mon": [["06:00", "10:30"]], "tue": [["06:00", "10:30"]], "wed": [["06:00", "10:30"]], "thu": [["06:00", "10:30"]], "fri": [["06:00", "10:30"]], "sat": [["06:00", "10:30"]], "sun": []},
+  "description": "Banh mi to take away, in the courtyard."},
+ {"id": "s5", "name": "Tea and Juice", "setting": "indoor",
+  "hours": {"mon": [["07:00", "17:00"]], "tue": [["07:00", "17:00"]], "wed": [["07:00", "17:00"]], "thu": [["07:00", "17:00"]], "fri": [["07:00", "17:00"]], "sat": [["07:00", "12:00"]], "sun": []},
+  "description": "Iced tea, fresh juice, soy milk, yogurt."},
+ {"id": "s6", "name": "Curry House", "setting": "indoor",
+  "hours": {"mon": [["10:30", "13:30"]], "tue": [["10:30", "13:30"]], "wed": [["10:30", "13:30"]], "thu": [["10:30", "13:30"]], "fri": [["10:30", "13:30"]], "sat": [], "sun": []},
+  "description": "Chicken curry with bread or rice, vegetable curry, peanut sauce on the side."}
+]
